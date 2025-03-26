@@ -17,7 +17,7 @@ if(isset($_POST["update"])) {
     $name = $_POST["name"];
     $password = $_POST["password"];
 
-    $q = "update data set name = '$name' password = '$password' where id = '$id'";
+    $q = "update data set name = '$name', password = '$password' where id = '$id'";
     $res = mysqli_query($con, $q);
 
     if($res) {
@@ -48,7 +48,7 @@ if(isset($_POST["update"])) {
         </div>
         <div class="mt-3 mb-3">
             <button type="reset" class="btn btn-primary">Reset</button>
-            <button type="submit" class="btn btn-success" value="Add" name="add">Submit</button>
+            <button type="submit" class="btn btn-success" name="update">Update</button>
         </div>
     </form>
 </body>
