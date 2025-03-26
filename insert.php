@@ -1,7 +1,7 @@
 <?php
 include("config.php");
 
-if(isset($_GET["add"])) {
+if(isset($_POST["add"])) {
     $name = $_POST["name"];
     $password = $_POST["password"];
 
